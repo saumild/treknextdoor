@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+  <title>TREK NEXT DOOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script>
+			function validateForm(){
+				
+				if(myForm.dest.value=="none"){
+					alert("Please select destination");
+					return false;
+				}
+			}
+		</script>
+  <style>
+  .navbar {
+      margin-bottom: 0;
+      background-color: #239B56;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #239B56 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  h4
+  {
+	color: #239B56;
+  }
+  
+  </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      
+      <img src="logo1.jpg" class="img-rounded" alt="mount" width="150" height="65">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">GALLARY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br><br><br><br>
+
+<div class="container">
+<form id="sub" name="sub" method="post" name="myForm" onsubmit="return validateForm()"">
+<div class="row">
+<div class="col-sm-4"><h4>Select Your Destination</h4></div>
+<div class="col-sm-4"><h4>Your Full Name:</h4></div>
+<div class="col-sm-4"><h4>Departure City:</h4></div>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<select name="dest">
+
+			  <option value="none">select</option>
+              <option value="ladakh">Ladakh / Zanskar </option>
+              <option value="rajesthan">Rajasthan</option>
+              <option value="himachal">Himachal Pradesh</option>
+              <option value="south india">South India</option>
+              <option value="uttarakhand">Uttarakhand </option>
+              <option value="sikkim">Sikkim </option>
+              <option value="central india">Central India </option>
+              <option value="eastern hima">Eastern Himalaya </option>
+</select></div>
+<div class="col-sm-4"><input type="text" name="fn" id="fn" required></div>
+<div class="col-sm-4"><input type="text" name="dc" id="dc" required></div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-4"><h4>Select Your Interest:</h4></div>
+<div class="col-sm-4"><h4>Your Holiday Duration:</h4></div>
+<div class="col-sm-4"><h4>Your Country:</h4></div>
+</div>
+<div class="row">
+<div class="col-sm-4"><select >
+            <option>select</option>
+              <option>Heritage Tours</option>
+              <option>Cultural Tours</option>
+              <option>Wildlife Tours</option>
+              <option>Nature Trails</option>
+              <option>Family Tour</option>
+              <option>Trekking Tours </option>
+              <option>Himalayan Special</option>
+              
+     
+          </select></div>
+<div class="col-sm-4"><input type="text" name="dur" id="dur" required></div>
+<div class="col-sm-4"><input type="text" name="co" id="co" required></div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-4"><h4>Preffered Accomodation:</h4></div>
+<div class="col-sm-4"><h4>Total no of Traveller:</h4></div>
+<div class="col-sm-4"><h4>Your Contact no:</h4></div>
+</div>
+<div class="row">
+<div class="col-sm-4"><select >
+            <option>select</option>
+             <option>International Hotels</option>
+              <option>Cottages</option>
+              <option>Motels</option>
+              <option>Resorts</option>
+              <option>Luxury Hotels</option>
+              <option>Standard Hotels </option>
+              <option>Lodges</option>
+              <option>Camps</option>
+              <option>Homestay</option>
+              
+     
+          </select></div>
+<div class="col-sm-4"><input type="text" name="nt" id="nt" required></div>
+<div class="col-sm-4"><input type="text" name="tel" id="tel" required></div>
+</div>
+<br>
+<div class="row">
+<div class="col-sm-4"><h4>Your Budget range:</h4></div>
+<div class="col-sm-4"><h4>Your Journey date(YYYY-MM-DD):</h4></div>
+<div class="col-sm-4"><h4>Your Email Id:</h4></div>
+</div>
+<div class="row">
+<div class="col-sm-4"><select >
+			<option>select</option>
+            <option value="1500">Upto € 1500 Per person</option>
+    <option value="1500-2000">€ 1500 &gt; € 2000 Per person</option>
+    <option value="2000-2500">€ 2000 &gt; € 2500 Per person</option>
+    <option value="2500-3000">€ 2500 &gt; € 3000 Per person</option>
+    <option value="3000-3500">€ 3000 &gt; € 3500 Per person</option>
+    <option value="3500-4000">€ 3500 &gt; € 4000 Per person</option>
+    <option value="4000-4500">€ 4000 &gt; € 4500 Per person</option>
+    <option value="4500-5000">€ 4500 &gt; € 5000 Per person</option>
+    <option value="5000+">€ 5000 + Per person</option>
+              
+     
+          </select></div>
+<div class="col-sm-4"><input type="dob" name="dob" id="dob" required></div>
+<div class="col-sm-4"><input type="email" name="e1" id="e1" required></div>
+
+</div>
+<br>
+<center>
+<h4>Any other info:</h4><textarea rows="4" cols="35" name="ad"></textarea><br>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
